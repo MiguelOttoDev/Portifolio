@@ -11,6 +11,7 @@
 .texto {
     flex: 1;
     padding-right: 2rem;
+    text-align: justify ;
 }
 
 .texto h1 {
