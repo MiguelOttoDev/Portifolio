@@ -1,7 +1,9 @@
+import Formulario from "../../components/Formulario";
+
 export default function Contact(){
     return(
         <>
-        <h1>Contact</h1>
+            <Formulario/>
         </>
     )
 }

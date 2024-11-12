@@ -1,0 +1,124 @@
+/* Estilos principais do formulário de contato */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Preencher a altura total da tela */
+  width: 100%; /* Garantir que o formulário ocupe toda a largura disponível */
+  padding: 20px;
+  box-sizing: border-box; /* Garantir que o padding não quebre o layout */
+}
+
+.contactForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #228B22; /* Cor verde especificada */
+  font-size: 52px; /* Tamanho do título aumentado */
+  font-weight: bold;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Limitar a largura do formulário */
+}
+
+.contactForm form div {
+  margin-bottom: 15px; /* Maior espaçamento entre os campos */
+}
+
+.contactForm form label {
+  margin-bottom: 10px;
+  font-size: 22px; /* Tamanho maior para os rótulos */
+  font-weight: bold;
+  color: #ffffff; /* Cor do texto */
+}
+
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 20px; /* Aumentando o padding para deixar os campos mais chamativos */
+  margin-top: 5px;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  border: 1px solid #ddd;
+  font-size: 18px; /* Aumentando o tamanho da fonte para os inputs */
+  box-sizing: border-box; /* Garantir que o padding não quebre o layout */
+  transition: all 0.3s ease; /* Transição suave para o foco */
+}
+
+.contactForm form input:focus,
+.contactForm form textarea:focus {
+  border-color: #228B22; /* Mudança de cor ao focar no campo */
+  outline: none; /* Remover a borda padrão de foco */
+  box-shadow: 0 0 5px rgba(34, 139, 34, 0.5); /* Efeito de foco verde */
+}
+
+.contactForm form button {
+  padding: 20px; /* Aumentando o tamanho do botão */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px; /* Aumentando o tamanho da fonte */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactForm form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Efeito de aumento suave no botão ao passar o mouse */
+}
+
+.contactForm form button:active {
+  transform: scale(1); /* Voltar ao tamanho normal quando pressionado */
+}
+
+/* Estilos do pop-up de confirmação */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  animation: fadeInOut 3s ease; /* Animação de aparição e desaparecimento */
+  font-size: 18px;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contactForm {
+      padding: 10px; /* Menos padding nas telas menores */
+  }
+
+  .contactForm h2 {
+      font-size: 28px; /* Ajustar tamanho do título em telas menores */
+  }
+
+  .contactForm form {
+      max-width: 100%; /* Permitir que o formulário ocupe 100% da largura em telas menores */
+  }
+
+  .contactForm form input,
+  .contactForm form textarea {
+      padding: 15px; /* Menos padding em telas menores */
+      font-size: 16px; /* Ajustar tamanho da fonte para telas menores */
+  }
+
+  .contactForm form button {
+      padding: 15px; /* Menos padding no botão em telas menores */
+      font-size: 18px; /* Ajustar tamanho da fonte no botão */
+  }
+}
