@@ -1,6 +1,6 @@
 import styles from './Tech.module.css'
-import { FaReact, FaPython, FaFigma, FaGitAlt   } from "react-icons/fa";
-import { SiJavascript, SiMysql } from "react-icons/si";
+import { FaReact, FaPython, FaNodeJs, FaGitAlt   } from "react-icons/fa";
+import { SiJavascript, SiMysql, SiTailwindcss  } from "react-icons/si";
 
 export default function Tech() {
     return (
@@ -25,8 +25,8 @@ export default function Tech() {
                 </div>
                 <div className={styles.card}>
 
-                    <p><FaFigma /></p>
-                    <h5>Figma</h5>
+                    <p><SiTailwindcss /></p>
+                    <h5>Tailwind CSS</h5>
                 </div>
                 <div className={styles.card}>
 
@@ -35,8 +35,8 @@ export default function Tech() {
                 </div>
                 <div className={styles.card}>
 
-                    <p><FaGitAlt  /></p>
-                    <h5>Git</h5>
+                    <p><FaNodeJs  /></p>
+                    <h5>NodeJs</h5>
                 </div>
             </div>
 
