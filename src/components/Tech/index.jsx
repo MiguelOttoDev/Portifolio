@@ -36,7 +36,7 @@ export default function Tech() {
                 <div className={styles.card}>
 
                     <p><FaNodeJs  /></p>
-                    <h5>NodeJs</h5>
+                    <h5>Node.Js</h5>
                 </div>
             </div>
 
