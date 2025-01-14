@@ -24,7 +24,7 @@ export default function Main(){
                     <button><MdEmail className={styles.icon} /> Entrar em contato</button>
                     </a>
                     <button onClick={handleDownload} > <LuUpload className={styles.icon} />Curriculo</button>
-                    <a href="https://curriculo-eta-rust.vercel.app" target="_blank">
+                    <a href="https://curriculo-amber-two.vercel.app" target="_blank">
                     <button><FaRegNewspaper className={styles.icon} /> Curriculo WEB</button>
                     </a>
                 </div>
